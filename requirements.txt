@@ -1,0 +1,6 @@
+pandas
+PyPDF2
+nbformat
+scikit-learn
+sentence-transformers
+faiss-cpu
