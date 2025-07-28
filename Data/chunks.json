@@ -1,0 +1,1074 @@
+{
+  "chunk_1": {
+    "texte": "Adrien Guille - R2.02 - Université Lumière Lyon 2Bases de la programmation (2)FonctionsUtilitéDéfinition d’une fonctionPrototypeTraitementPortée des variablesSortieAppel d’une fonctionExercicesUtilité Dans un premier temps, une fonction permet de définir et de mémoriser un algorithme (donnée(s) d’entrée, traitement, donnée(s) de sortie). À ce stade, le traitement abstrait est mémorisé, mais n’est pas exécuté.Par la suite, on pourra appeler la fonction pour qu’elle exécute le traitement pour des",
+    "metadata": {
+      "fichier": "CM1 - Fonctions.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_2": {
+    "texte": "données d’entrée dont on précisera les valeurs. La fonction retourne sa ou ses données de sortie, c’est-à-dire le résultat du traitement pour les données d’entrée passé lors de l’appel, qu’on mémorise dans une ou plusieurs variables.Définition d’une fonction Prototype Le prototype permet de spécifier le nom sous lequel mémoriser la fonction (dans l’exemple suivant nom_de_la_fonction), et les données d’entrée (dans l’exemple suivant, il y en a 2, que l’on nomme argument_1et argument_2) :Une fonct",
+    "metadata": {
+      "fichier": "CM1 - Fonctions.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_3": {
+    "texte": "ion peut ne pas avoir de données d'entrée. Dans ce cas, on laisse les paranthèses vides :def nom_de_la_fonction(argument_1, argument_2):1def une_autre_fonction():1 Traitement Le traitement traduit en Python l'algorithme à appliquer sur la ou les données d'entrée, lesquelles sont abstraites à ce stade. Autrement dit, les données d'entrée ont des noms (les arguments) mais pas de valeurs. La fonction ci-dessous est nommé maximum et a une donnée d'entrée, liste, qu'on suppose une liste d'entiers nat",
+    "metadata": {
+      "fichier": "CM1 - Fonctions.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_4": {
+    "texte": "urels : Portée des variables Les variables définies à l'intérieur d'une fonction ont une portée limitée. En effet, elles n'existent qu'à l'intérieur de la fonction, c'est-à-dire qu'elles sont utilisables durant le traitement, mais pas en dehors. Sortie Pour communiquer des valeurs au programme où la fonction a été appelée, on doit les renvoyer explicitement. Cela se fait à l’aide d’une instruction spéciale qui débute par le mot-clé return et qui liste toutes les valeurs à communiquer. La fonctio",
+    "metadata": {
+      "fichier": "CM1 - Fonctions.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_5": {
+    "texte": "n ci-dessous communique la valeur de la variable mà la fin du traitement, de sorte que le programme connaisse la valeur maximale dans la liste passée en argument. Appel d’une fonction Une fois la fonction définie dans le programme, on peut l'appeler quand cela est nécessaire. Ci-dessous, on appelle deux fois la fonction maximumdéfinie précédemment. D'abord, on applique le traitement aux valeurs dans liste_1 et mémorise le résultat dans la variable max_1. On appelle une seconde fois la fonction,",
+    "metadata": {
+      "fichier": "CM1 - Fonctions.pdf",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_6": {
+    "texte": "cette fois-ci en spécifiant directement les valeurs de la liste reçue en entrée ([7, 8, 88]) et on mémorise ce nouveau résultat dans la variable max_2. Enfin, on appelle une troisième fois la fonction pour déterminer et afficher la plus grande valeur parmi les valeurs des deux listes précédentes.def maximum(liste):  m = 0  for i in range(len(liste)):    if liste[i] > m:      m = liste[i]12345 def maximum(liste):  m = liste[0]  for i in range(1, len(liste)):    if liste[i] > m:      m = liste[i]",
+    "metadata": {
+      "fichier": "CM1 - Fonctions.pdf",
+      "debut": 2500,
+      "fin": 3000
+    }
+  },
+  "chunk_7": {
+    "texte": "return m123456 On peut omettre les noms des arguments lors de l'appel à la fonction, dans la mesure où ils sont ordonnés.Exercices 1.Écrire une fonction permettant de calculer le produit scalaire de deux vecteurs (c’est-à-dire deux listes de longueurs égales).2.Soit les trois vecteurs ,  et . Écrire un programme faisant notamment appel à cette fonction pour afficher ce que vaut le produit scalaire le plus grand entre  et .3.Proposer une structure de données permettant de mémoriser une matrice e",
+    "metadata": {
+      "fichier": "CM1 - Fonctions.pdf",
+      "debut": 3000,
+      "fin": 3500
+    }
+  },
+  "chunk_8": {
+    "texte": "n Python. Écrire une nouvelle fonction faisant appel à la première fonction écrite pour calculer le produit d’une matrice par sa transposée.4.Écrire une fonction permettant de déterminer si deux listes sont identiques. Écrire une fonction  s’appuyant sur la précédente pour déterminer si une matrice est symétrique.liste_1 = [1, 2, 3]max_1 = maximum(liste=liste_1)max_2 = maximum(liste=[7, 8, 88])max_global = maximum([max_1, max_2])print(max_global)12345",
+    "metadata": {
+      "fichier": "CM1 - Fonctions.pdf",
+      "debut": 3500,
+      "fin": 4000
+    }
+  },
+  "chunk_9": {
+    "texte": "Adrien Guille IUT Lumière - Département STIDR1.03 - bases de la programmation (1) organisation du module•Enseignement •3 séances de cours magistraux •2 séances de TD sur table et 9 séances de TP sur machine •2 intervenants •Évaluation •1 épreuve sur table : à mi-module, a priori le 14 octobre 2021 •1 TP noté : à la ﬁn du module, a priori le 23 novembre 2021 •Quizz2 Introduction Algorithme •Terme employé en mathématiques et en informatique pour désigner une séquence ﬁnie d’instructions pour résou",
+    "metadata": {
+      "fichier": "CM1 - Introduction.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_10": {
+    "texte": "dre un problème ou réaliser une tâche.  •Chaque instruction doit être non ambigüe. L ’algorithme s’écrit et se lit ligne-à-ligne, une instruction par ligne. 7EntréeSortieTraitement Programme•Traduction d’un algorithme dans un langage de programmation •Langage de haut niveau : facilement compréhensible par le programmeur •Langage de bas niveau : facilement compréhensible par le processeur •Exécutable par un ordinateur •Appliqué à des données d’entrée concrètes •La sortie est transmise à l’utilisa",
+    "metadata": {
+      "fichier": "CM1 - Introduction.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_11": {
+    "texte": "teur ou est réutilisée par un autre programme8 Langage de programmation•Composants d’un langage •Vocabulaire •Sémantique •Syntaxe •Langage de haut niveau •Les programmes écrits dans un langage de haut niveau sont traités par un interprète (par exemple un compilateur) avant d’être transmis au processeur9 exemple : intégration selon la méthode de monte carlo•Déﬁnition de l’intégrale et solution analytique •Calcul de l’intégrale de  sur l’intervalle [0, 1] •Par déﬁnition  •La primitive de , à une c",
+    "metadata": {
+      "fichier": "CM1 - Introduction.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_12": {
+    "texte": "onstante près, est  •f(x)=x3−2x∫10f(x)dx=[F(x)]10=F(1)−F(0)x3−2xF(x)=14x4−x2∫10x3−2xdx=−3412 exemple : intégration selon la méthode de monte carlo •Principe de la méthode de Monte Carlo •On cherche à approcher , la valeur de l’intégrale :  •On tire uniformément un ensemble de  valeurs dans l’intervalle   •On approche  par  •D’après la loi des grands nombres, II=∫10f(x)dxN[0;1]X={xi∼Uniforme(0,1)}N1I˜IN=1NN∑i=1f(xi)limN→+∞˜IN=I13 exemple : intégration selon la méthode de monte carloimport random#",
+    "metadata": {
+      "fichier": "CM1 - Introduction.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_13": {
+    "texte": "donnée d'entrée : nombre de tiragesN = 100000# traitementsomme = 0for i in range(N): # structure itérative (boucle)    x_i = random.uniform(0, 1) # tirage d'un réel entre 0 et 1 selon la loi uniforme    f = x_i ** 3 - 2 * x_i # évaluation de la fonction f en x_i    somme = somme + f # mise à jour de la somme# donnée de sortie : moyennemoyenne = somme / Nprint(moyenne)14•Programme écrit en langage Python",
+    "metadata": {
+      "fichier": "CM1 - Introduction.pdf",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_14": {
+    "texte": "Adrien Guille - R1.03 - Université Lumière Lyon 2Bases de la programmation (1)Éléments de base d'un programmeVariableOpérateur d’affectationOpérateurs arithmétiquesFonctions élémentairesLecture : inputAffichage : printQuelques exemples d'algorithmes simplesTrace d’exécution d’un programmeOpérateurs de comparaisonOpérateurs logiquesVariable Utilité : mémoriser une valeur au cours du traitement, pour pouvoir s'en resservir plus tardCaractéristiques•Nom : alphanumérique, ne peut pas commencer par u",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_15": {
+    "texte": "n chiffre ni contenir des symboles correspondants à des opérateurs (cf. sections suivantes)Exemples : A, b, c21, x1_y2 ◦Contre-exemples :  1a et 1-a , le nom 1-aest ambigu, s’agit-il ◦•Type : entier, réel, texte, booléen (Vrai, Faux), etc.•Valeur : ce que vaut la variable à un instant t/uni00A0Opérateur d’affectation Utilité : donner une (nouvelle) valeur à une variableUsage : nom d'une variable = valeur•Exemple : A = 20•Exemple : c21 = A •Contre-exemple : 20 = A, on doit toujours donner un nom",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_16": {
+    "texte": "de variable à gauche/uni00A0Opérateurs arithmétiques Utilité : appliquer des opérations arithmétiques à deux opérandes, une à gauche et une à droiteUsage•Somme : une valeur + une valeurExemple : 1 + 10, x + 10, x + y◦•Différence : une valeur - une valeur•Produit : une valeur * une valeur•Division : une valeur / une valeur•Puissance : une valeur ** exposant•Modulo (reste de la division entière) : une valeur % une valeur/uni00A0Fonctions élémentaires Lecture : input Utilié : lire une valeur saisie",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_17": {
+    "texte": "par l'utilisateurUsage : input(texte invitant à saisir une valeur)Exemple : réponse1 = input(\"Saisir votre âge : \")•Exemple : réponse2 = input(\"Saisir votre nom : \")•Contre-exemple : input(\"Saisir votre âge : \"), la valeur lue n’est pas mémorisée•/uni00A0 Affichage : print Utilité : afficher une ou des valeurs à l'utilisateurUsage : print(valeur)Exemple : print(3)•Exemple : print(\"bonjour\")•Exemple : print(réponse2)•/uni00A0Quelques exemples d'algorithmes simples Programme qui détermine l'indic",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_18": {
+    "texte": "e de masse corporelle selon la formule de l'OMS d'après la taille (en m) et le poids (en kg) d'une personne : Première version : données d’entrée inscrites dans le programme Deuxième version : données d’entrée saisies lors de l’exécution du programme Programme qui permute circulairement les valeurs de trois variables, a, b, c.# définition des données d'entréetaille = 1.8poids = 74# traitementtaille_2 = taille ** 2imc = taille_2 / poids# affichage de la donnée de sortieprint(imc)# définition des",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_19": {
+    "texte": "données d'entréetaille = float(input(\"Saisir la taille (en m) : \"))poids = float(input(\"Saisir le poids (en kg) : \"))# traitementtaille_2 = taille ** 2imc = taille_2 / poids# affichage de la donnée de sortieprint(imc) abcd1–––/uni00A02––/uni00A0/uni00A03–/uni00A0/uni00A0/uni00A03/uni00A0/uni00A02/uni00A0/uni00A01/uni00A0/uni00A03/uni00A0/uni00A0/uni00A0/uni00A0Trace d’exécution d’un programme Trace d’une exécution du programme précédent (l’utilisateur saisit les valeurs 1, 2 et 3) : /uni00A0Opér",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 2500,
+      "fin": 3000
+    }
+  },
+  "chunk_20": {
+    "texte": "ateurs de comparaison Utilité : comparer deux opérandes (de types compatibles), une à gauche et une à droite. Le résultat est de type booléen, c’est-à-dire soit la valeur True, soit la valeur False.Opérateurs# définition des données d'entréea = input(\"saisir la valeur de a : \")b = input(\"saisir la valeur de b : \")c = input(\"saisir la valeur de c : \")# traitementd = cc = bb = aa = d# affichage des données de sortiesprint(a, b, c) Supériorité stricte : une valeur > une valeur•Supérieuriorité : une",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 3000,
+      "fin": 3500
+    }
+  },
+  "chunk_21": {
+    "texte": "valeur >= une valeur•Infériorité stricte : une valeur < une valeur•Infériorité : une valeur <= une valeur•Égalité : une valeur == une valeur•Inégalité : une valeur != une valeur•/uni00A0Opérateurs logiques Utilité : combiner des valeurs booléennes (donc des valeurs True / False). Le résultat est toujours de type booléen.Opérateurs•Conjonction : une valeur logique and une valeur logiqueDonne True, si et seulement si les deux opérandes valent True ; Donne False sinon.◦•Disjonction : une valeur lo",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 3500,
+      "fin": 4000
+    }
+  },
+  "chunk_22": {
+    "texte": "gique or une valeur logiqueDonne True, si au moins une des deux opérandes vaut True ; Donne False si les opérandes valent False.◦•Négation : not une valeur logiqueDonne True si la valeur est False ; Donne False si la valeur est True.◦Propriétés•Commutativité des opérateurs binaires : l'ordre est sans importance, par exemple :a and b est équivalente à b and a, de même a or b est équivalent à b or a◦•Priorité : la négation est prioritaire sur les autres opérateurs, la conjonction est prioritaire s",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 4000,
+      "fin": 4500
+    }
+  },
+  "chunk_23": {
+    "texte": "ur la disjonction, c'est-à-dire que :a or b and c est équivalent à a or (b and c)◦•Distributivité : la conjonction comme la disjonction sont distributives, c'est-à-dire que :a and (b or c) est équivalent à a and b or a and c◦",
+    "metadata": {
+      "fichier": "CM2 - E╠üle╠üments de base.pdf",
+      "debut": 4500,
+      "fin": 5000
+    }
+  },
+  "chunk_24": {
+    "texte": "Adrien Guille - R1.03 - Université Lumière Lyon 2Bases de la programmation (1)Structures de contrôleStructures conditionnellesStructure conditionnelle simple : ifStructure conditionnelle complète : if elseExemplesStructures itérativesBoucle “pour” : forBoucle “tant que” : whileExemplesStructures conditionnelles Utilité : soumettre l'exécution d'une partie des instructions d'un traitement à une condition. Structure conditionnelle simple : if Structure utile lorsque certaines instructions ne doive",
+    "metadata": {
+      "fichier": "CM3 - Structures de controle.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_25": {
+    "texte": "nt être exécutées que si une condition est respectée.Usage :if une valeur booléenne:séquence d'instructionsStructure conditionnelle complète : if else Structure utile lorsque certaines instructions doivent être exécutées si une condition est respectée, et d’autres instructions si cette condition n’est pas respectée.Usage :if une valeur booléenne:séquence d'instructions – branche principaleelse:séquence d'instructions – branche alternative Exemples Programme qui détermine la valeur absolue d’une",
+    "metadata": {
+      "fichier": "CM3 - Structures de controle.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_26": {
+    "texte": "valeur numériquée donnée, a. Une structure conditionnelle simple suffit. Programme qui détermine si une valeur entière donnée, a, est paire ou impaire.  /uni00A0Structures itératives Utilité : Répéter des instructions similaires plusieurs foisBoucle “pour” : for Boucle utile pour répéter des instructions un nombre de fois pré-déterminé.Usage :for un indice in range(un intervalle semi-ouvert à droite):séquence d'instructions à répéter/uni00A0# spécification de la donnée d'entréea = -3# traitement",
+    "metadata": {
+      "fichier": "CM3 - Structures de controle.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_27": {
+    "texte": "if a < 0:  a = -a# affichage de la donnée de sortieprint(a)# lecture de la donnée d'entréea = int(input(\"Saisir un entier : \"))# traitementif a % 2 == 0:  réponse = \"cet entier est pair\" else:  réponse = \"cet entier est impair\"# affichage de la donnée de sortieprint(réponse) Boucle “tant que” : while Boucle utile pour répéter des instructions tant qu’une conditione est respectée.Usagewhile une valeur booléenne:séquence d'instructions à répéter/uni00A0Exemples Programme qui détermine la factoriel",
+    "metadata": {
+      "fichier": "CM3 - Structures de controle.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_28": {
+    "texte": "le d’un entier n donné (pour rappel : ).Avec une boucle for : Avec une boucle tant que :# spécification de la donnée d'entréen = 3# traitementfactorielle = 1for i in range(1, n+1):  factorielle = factorielle * i# affichage de la donnée de sortieprint(factorielle)# spécification de la donnée d'entréen = 3# traitementi = 1factorielle = 1while i <= n:  factorielle = factorielle * i  i = i + 1# affichage de la donnée de sortieprint(factorielle)",
+    "metadata": {
+      "fichier": "CM3 - Structures de controle.pdf",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_29": {
+    "texte": "Adrien Guille - R1.03 - Université Lumière Lyon 2Bases de la programmation (1)Structures de donnéesStructures généralesListe : []ExempleDictionnaire : {}Structures mathématiquesStructures générales Utilité : Mémoriser plusieurs valeurs dans une même variableListe : [] Structure utile quand on veut stocker une série de valeurs (par exemple une série statistique). Les valeurs sont identifiées par leur position dans la liste.CaractéristiquesNom : comme toute variable•Taille : le nombre de valeurs m",
+    "metadata": {
+      "fichier": "CM4 - Structures de donne╠ües.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_30": {
+    "texte": "émorisées à un instant t•Usage :Déclaration d’une liste vide : nom = []•Déclaration d’une liste comportant déjà des valeurs : nom = [valeurs séparés par des virgules]•Calcul de la taille d’une liste : len(nom)•Accès à la valeur mémorisée à la position i : nom[i]•Exemple Programme qui calcule la moyenne des valeurs mémorisées dans une liste nommée valeurs: /uni00A0Dictionnaire : {} Structure utile quand on veut stocker des valeurs étiquetées (par exemple la description d’un individu). Les valeurs",
+    "metadata": {
+      "fichier": "CM4 - Structures de donne╠ües.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_31": {
+    "texte": "sont identifiées par leur étiquette dans le dictionnaire. On reviendra plus tard sur cette structure dans le cursus STID./uni00A0Structures mathématiques Utilité : Stocker des valeurs sous la forme de vecteurs, matrices ou tenseurs adaptés au calcul. On étudiera ces structures et leurs caractéristiques plus tard dans le cursus STID.données = [3, 5, 8]somme = 0for i in range(0, len(données)): # len(valeur) donne la taille de la liste   somme = somme + données[i] # valeurs[i] extrait la i-ème val",
+    "metadata": {
+      "fichier": "CM4 - Structures de donne╠ües.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_32": {
+    "texte": "eurmoyenne = somme / len(données)print(moyenne)",
+    "metadata": {
+      "fichier": "CM4 - Structures de donne╠ües.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_33": {
+    "texte": "# Programmation (2) - Sujet 1 - Devine la corrélation !  ## Exercice 1 from numpy import arange from numpy.random import uniform from numpy.random import normal  def generate_data(n=20):     \"\"\"     Fonction qui génère aléatoirement un série bivariée (X, Y) de n individus     Argument :      - n : entier, nombre de points (valeur par défaut : 20)     Retour :      - x : liste de n réels, valeurs de X      - y : liste de n réels, valeurs de Y     \"\"\"     # on génère n valeurs par pas de 1/n entre",
+    "metadata": {
+      "fichier": "Devine_la_corrA╠â┬®lation_!-2.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_34": {
+    "texte": "0 et 1     x = arange(start=0, stop=1, step=1/n)     # on génère les valeurs de y une à une     y = [] # liste vide     pente = uniform(low=0, high=0.75) # choix de la pente     sigma = uniform(low=0.01, high=0.2) # choix de l'écart-type du terme d'erreur     for i in range(len(x)):         erreur_i = normal(loc=0, scale=sigma) # tirage aléatoire du terme d'erreur pour l'individu i         y.append(pente * x[i] + erreur_i) # calcul de y_i et ajout à la liste y     return x, y  x, y = generate_d",
+    "metadata": {
+      "fichier": "Devine_la_corrA╠â┬®lation_!-2.ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_35": {
+    "texte": "ata(n=10) print(x) print(y) ## Exercice 2 from scipy.stats import pearsonr # mesure le coefficient de corrélation linéaire et la p-valeur from matplotlib.pyplot import scatter # configure un graphique en nuage de points from matplotlib.pyplot import show # affiche les graphiques  def play_turn():     \"\"\"     Fonction qui permet de jouer un tableau du jeu     Retour :     - coefficient_mesuré : coefficient de corrélation linéaire mesuré sur les données     - coefficient_estimé : coefficient de co",
+    "metadata": {
+      "fichier": "Devine_la_corrA╠â┬®lation_!-2.ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_36": {
+    "texte": "rrélation estimée visuellement par le joueur     \"\"\"     x, y = generate_data(uniform(low=20, high=30)) # génération d'une série bivariée de 20 à 30 individus     coefficient_mesuré = pearsonr(x, y).statistic # calcul et mémorisation du coefficient de corrélation linéaire     scatter(x, y) # configuration du nuage de points     show() # affichage du nuage de points     coefficient_estimé = float(input(\"Coefficient estimé : \")) # lecture d'une valeur réelle (float) au clavier     return coefficie",
+    "metadata": {
+      "fichier": "Devine_la_corrA╠â┬®lation_!-2.ipynb",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_37": {
+    "texte": "nt_mesuré, coefficient_estimé  coef_mesuré, coef_estimé = play_turn() erreur = abs(coef_mesuré - coef_estimé) def play_game():     \"\"\"     Fonction qui permet de jouer une partie du jeu     Retour :     - pièces : le nombre de pièces gagnées lors de la partie     \"\"\"     vies = 3     pièces = 0     while vies > 0:         print(f\"Vies : {vies}, Pièces : {pièces}\")         coef_mesuré, coef_estimé = play_turn()         erreur = abs(coef_mesuré - coef_estimé)         if erreur > 0.1:             v",
+    "metadata": {
+      "fichier": "Devine_la_corrA╠â┬®lation_!-2.ipynb",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_38": {
+    "texte": "ies = vies - 1         else:             pièces = pièces + 1             if erreur <= 0.05:                 pièces = pièces + 4                 if vies < 3:                     vies = vies + 1     return pièces  play_game()",
+    "metadata": {
+      "fichier": "Devine_la_corrA╠â┬®lation_!-2.ipynb",
+      "debut": 2500,
+      "fin": 3000
+    }
+  },
+  "chunk_39": {
+    "texte": "# Programmation (2) - Sujet 1 - Devine la corrélation !  ## Exercice 1 from numpy import arange from numpy.random import uniform from numpy.random import normal  def generate_data(n=20):     \"\"\"     Fonction qui génère aléatoirement un série bivariée (X, Y) de n individus     Argument :      - n : entier, nombre de points (valeur par défaut : 20)     Retour :      - x : liste de n réels, valeurs de X      - y : liste de n réels, valeurs de Y     \"\"\"     # on génère n valeurs par pas de 1/n entre",
+    "metadata": {
+      "fichier": "Devine_la_corrA╠â┬®lation_!.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_40": {
+    "texte": "0 et 1     x = arange(start=0, stop=1, step=1/n)     # on génère les valeurs de y une à une     y = [] # liste vide     pente = uniform(low=0, high=0.75) # choix de la pente     sigma = uniform(low=0.01, high=0.2) # choix de l'écart-type du terme d'erreur     for i in range(len(x)):         erreur_i = normal(loc=0, scale=sigma) # tirage aléatoire du terme d'erreur pour l'individu i         y.append(pente * x[i] + erreur_i) # calcul de y_i et ajout à la liste y     return x, y  x, y = generate_d",
+    "metadata": {
+      "fichier": "Devine_la_corrA╠â┬®lation_!.ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_41": {
+    "texte": "ata(n=10) print(x) print(y) ## Exercice 2",
+    "metadata": {
+      "fichier": "Devine_la_corrA╠â┬®lation_!.ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_42": {
+    "texte": "# Intégration par la méthode Monte-Carlo  Le programme Python ci-dessous met en œuvre la méthode de Monte-Carlo pour calculer numériquement l'intégrale $\\int_0^1 x^3 - 2x ~ dx$.  - Le programme a une donnée d'entrée : `N`, le nombre de points aléatoires en lesquels est évalué $x^3 - 2x$. - Le programme a une donnée de sortie :`moyenne`, l'estimation de la valeur de l'intégrale. import random  # donnée d'entrée : nombre de tirages N = 10000  # traitement somme = 0 for i in range(N): # structure i",
+    "metadata": {
+      "fichier": "MA╠â┬®thode_de_Monte_Carlo.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_43": {
+    "texte": "térative (boucle)     x_i = random.uniform(0, 1) # tirage d'un réel entre 0 et 1 selon la loi uniforme     f = x_i ** 3 - 2 * x_i # évaluation de la fonction f en x_i     somme = somme + f # mise à jour de la somme  # donnée de sortie : moyenne moyenne = somme / N print(moyenne)",
+    "metadata": {
+      "fichier": "MA╠â┬®thode_de_Monte_Carlo.ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_44": {
+    "texte": "['mule', 'principe', 'fils', 'visage', 'girafe', 'sympathie', 'ponctuel', 'champion', 'hutte', 'principal', 'comte', 'jungle', 'augmenter', 'chandail', 'frit', 'république', 'clin', 'guillotine', 'aluminium', 'admission', 'pompe', 'silence', 'asphalte', 'transplantation', 'pop', 'brasse', 'adresses', 'dément', 'desserrer', 'signal', 'blessure', 'poulet', 'italie', 'outil', 'balle', 'course', 'commencer', 'crime', 'procréer', 'chaussures', 'côté', 'logiciel', 'visage', 'suicide', 'violon', 'bruit",
+    "metadata": {
+      "fichier": "mots.pickle",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_45": {
+    "texte": "', 'cannelle', 'mari', 'lierre', 'course', 'soucoupe', 'historique', 'anatomie', 'les', 'distiller', 'fracture', 'conflit', 'guitare', 'cassette', 'loup', 'loup', 'miroir', 'cendres', 'accident', 'coton', 'bonbons', 'ensemble', 'continuer', 'fouilles', 'louer', 'grandir', 'chagrin', 'palmipède', 'coquille', 'stylo', 'groupe', 'manipuler', 'sucer', 'chercheur', 'fromage', 'cohérence', 'peindre', 'industrie', 'hurlement', 'ver', 'voler', 'suspect', 'couverture', 'ambassadeur', 'marais', 'chaussons",
+    "metadata": {
+      "fichier": "mots.pickle",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_46": {
+    "texte": "', 'profondeur', 'dramatique', 'conflit', 'épi', 'fini', 'aligner', 'drapeaux', 'règles', 'zodiaque']",
+    "metadata": {
+      "fichier": "mots.pickle",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_47": {
+    "texte": "def maximum(liste): \tm = liste[0] \tfor i in range(1, len(liste)): \t\tif liste[i] > m: \t\t\tm = liste[i] \treturn m liste = [3, 12, 18] m = maximum(liste) print(m) def produit_scalaire(a, b):     somme = 0     for i in range(len(a)):         somme = somme + a[i] * b[i]     return somme  a = [1, 3] b = [2, 4] c = [4, 2] print(maximum([produit_scalaire(a, b), produit_scalaire(a, c)]))",
+    "metadata": {
+      "fichier": "Programmation_(2)_CM_1.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_48": {
+    "texte": "Adrien Guille - R2.03 - Université Lumière Lyon 2Bases de la programmation (2)RévisionsExercice 1 1.Écrire la fonction créer_matrice qui reçoit en arguments deux entiers n et m et retourne un tableau de typenumpy.array de dimensions (n, m), rempli d’entiers aléatoires entre 0 et 100.Exemple d’appel :2.Ajouter un argument booléen, entier, valant par défaut True. Si cet argument prend la valeur False, la fonction doit générer des nombres réels entre 0 et 1 au lieu d'entiers entre 0 et 100.3.La mod",
+    "metadata": {
+      "fichier": "RA╠â┬®visions.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_49": {
+    "texte": "ification de la définition de la fonction influe-t-elle sur la nature de la variable m dans l’exemple d’appel ci-dessus ?4.Appeler la fonction pour générer une matrice (10, 2) remplie de réels entre 0 et 1.Exercice 2 1.Écrire la fonction somme_lignes qui reçoit une matrice et retourne une liste contenant la somme des coefficients de chaque ligne.2.Écrire un programme qui affiche la somme des coefficients des lignes d’une matrice (5,5) contenant des réels aléatoire entre 0 et 1.3.Écrire la foncti",
+    "metadata": {
+      "fichier": "RA╠â┬®visions.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_50": {
+    "texte": "on somme_colonnesqui reçoit une matrice et retourne une liste contenant la somme des coefficients de chaque colonne. La fonction doit faire appel à la fonction numpy.transpose.Exercice 3 1.Écrire la fonction est_palindrome qui reçoit en argument un texte et retourne True si le mot est un palindrome, False sinon.Exemple d’appel :m = créer_matrice(3, 4)print(m)  # Affiche une matrice entière 3x412 print(palindrome(\"radar\")) # affiche Trueprint(palindrome(\"python\")) # affiche False12",
+    "metadata": {
+      "fichier": "RA╠â┬®visions.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_51": {
+    "texte": "# Stéganographie  ## Exercice 1 - Conversion de base import numpy as np  def to_binary(decimal):     binary = []     for exponent in range(7, -1, -1):         power = 2 ** exponent         if decimal >= power:             decimal = decimal - power             binary.append(1)         else:             binary.append(0)     binary = np.array(binary)     binary = np.flip(binary)     return binary  b = to_binary(130) print(b) def to_decimal(binary):     decimal = 0     for i in range(0, 8):",
+    "metadata": {
+      "fichier": "SD_StA╠â┬®ganographie_(Solution).ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_52": {
+    "texte": "decimal = decimal + binary[i] * 2 ** i     return decimal  d = to_decimal(b) print(d) ## Exercice 2 - Chargement et visualisation d'une image from PIL.Image import open from matplotlib.pyplot import imshow, show  image = np.array(open('burger_mystery_rillette.png')) print(image) print(np.shape(image)) imshow(image) show() ## Exercice 3 - Manipulation des images def decode_image(image):     # trois boucles imbriquées pour parcourir toutes les valeurs dans le tenseur 3D     for i in range(np.shape",
+    "metadata": {
+      "fichier": "SD_StA╠â┬®ganographie_(Solution).ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_53": {
+    "texte": "(image)[0]):         for j in range(np.shape(image)[1]):             for k in range(3):                 taux_décimal = image[i,j,k] # lecture du taux décimal (0-255) dans le tenseur                 taux_binaire = to_binary(taux_décimal)  # conversion en binaire                 for m in range(4): # décodage                     taux_binaire[m+4] = taux_binaire[m]                 nouveau_taux_décimal =  to_decimal(taux_binaire) # reconversion en décimal                 image[i,j,k] = nouveau_taux_d",
+    "metadata": {
+      "fichier": "SD_StA╠â┬®ganographie_(Solution).ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_54": {
+    "texte": "écimal # écriture du taux modifié dans le tenseur     return image  imshow(image) show() imshow(decode_image(image)) show()",
+    "metadata": {
+      "fichier": "SD_StA╠â┬®ganographie_(Solution).ipynb",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_55": {
+    "texte": "Erreur CSV : read_csv() got an unexpected keyword argument 'errors'",
+    "metadata": {
+      "fichier": "spotify.csv",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_56": {
+    "texte": "# Étude des chansons populaires sur Spotify ## Chargement des données  Les données sont chargées à partir d'un fichier CSV. La description de chaque chanson est mémorisée à l'aide d'un dictionnaire. Les descriptions de toutes les chansons sont mémorisées dans une liste. import csv # import de la librairie de base pour lire les fichiers CSV  with open(\"spotify.csv\", mode=\"r\", encoding=\"utf-8-sig\") as fichier:     lecteur = csv.reader(fichier, delimiter=';')     noms_colonnes = next(lecteur)     c",
+    "metadata": {
+      "fichier": "Spotify_Solution.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_57": {
+    "texte": "hansons = [] # déclaration d'une liste vide     for ligne in lecteur:         # création d'un dictionnaire pour mémoriser la description de la chanson         chanson = {\"titre\": ligne[0],                    \"artiste\": ligne[1],                    \"genre\": ligne[2],                    \"année\": int(ligne[3]),                    \"tempo\": int(ligne[4]),                    \"énergie\": int(ligne[5]),                    \"danse\": int(ligne[6]),                    \"live\": int(ligne[8]),",
+    "metadata": {
+      "fichier": "Spotify_Solution.ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_58": {
+    "texte": "\"durée\": int(ligne[10]),                    \"acoustique\": int(ligne[11]),                    \"paroles\": int(ligne[12]),                    \"popularité\": int(ligne[13])                     }         chansons.append(chanson) # ajout de la chanson à la fin de la liste print(len(chansons), \"chansons\") print(len(noms_colonnes), \" attributs :\", noms_colonnes) print(\"Titre de la première chanson :\", chansons[0][\"titre\"]) print(\"Artiste de la première chanson :\", chansons[0][\"artiste\"]) chansons[0] ##",
+    "metadata": {
+      "fichier": "Spotify_Solution.ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_59": {
+    "texte": "Duel d'artistes  artiste_1 = input(\"Saisir le nom du premier artiste : \") artiste_2 = input(\"Saisir le nom du second artiste : \") compteur_1 = 0 compteur_2 = 0 for i in range(0, len(chansons)):     if chansons[i][\"artiste\"] == artiste_1:         compteur_1 = compteur_1 + 1     if chansons[i][\"artiste\"] == artiste_2:         compteur_2 = compteur_2 + 1 if compteur_1 > compteur_2:     print(f\"{artiste_1} bat {artiste_2} !\") else:     if compteur_1 < compteur_2:         print(f\"{artiste_2} bat {ar",
+    "metadata": {
+      "fichier": "Spotify_Solution.ipynb",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_60": {
+    "texte": "tiste_1} !\")     else:         print(f\"{artiste_1} et {artiste_2} son ex-aequo !\") ## Analyse d'un artiste artiste = input(\"Saisir le nom de l'artiste : \") chansons_artiste = [] for i in range(0, len(chansons)):     if chansons[i][\"artiste\"] == artiste:         chansons_artiste.append(chansons[i]) print(len(chansons_artiste), \"chansons\") popularité_max = 0 for i in range(len(chansons_artiste)):     if chansons_artiste[i][\"popularité\"] > popularité_max:         chanson_max = chansons_artiste[i]",
+    "metadata": {
+      "fichier": "Spotify_Solution.ipynb",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_61": {
+    "texte": "popularité_max = chansons_artiste[i][\"popularité\"] print(f\"Chanson la plus populaire de {artiste}\") print(f\"{chansons_artiste[i]['titre']}: {chansons_artiste[i]['année']}\") nom_attribut = input(\"Saisir le nom d'un attribut : \") min = 1000 max = 0 moyenne = 0 for i in range(0, len(chansons_artiste)):     if chansons_artiste[i][nom_attribut] < min:         min = chansons_artiste[i][nom_attribut]     if chansons_artiste[i][nom_attribut] > max:         max = chansons_artiste[i][nom_attribut]",
+    "metadata": {
+      "fichier": "Spotify_Solution.ipynb",
+      "debut": 2500,
+      "fin": 3000
+    }
+  },
+  "chunk_62": {
+    "texte": "moyenne = moyenne + chansons_artiste[i][nom_attribut] moyenne = moyenne / len(chansons_artiste) print(f\"- minimum : {min}\") print(f\"- maximum : {max}\") print(f\"- moyenne : {moyenne:.1f}\") nombre_par_année = [] for année in range(2010, 2020):     compteur = 0     for i in range(len(chansons_artiste)):         if chansons_artiste[i][\"année\"] == année:             compteur = compteur + 1     nombre_par_année.append(compteur) print(\"Nombre de chansons dans le top, par année :\") for i in range(0,",
+    "metadata": {
+      "fichier": "Spotify_Solution.ipynb",
+      "debut": 3000,
+      "fin": 3500
+    }
+  },
+  "chunk_63": {
+    "texte": "len(nombre_par_année)):     année = 2010 + i     print(f\"{année} : {nombre_par_année[i]}\")",
+    "metadata": {
+      "fichier": "Spotify_Solution.ipynb",
+      "debut": 3500,
+      "fin": 4000
+    }
+  },
+  "chunk_64": {
+    "texte": "import numpy as np  def to_binary(base10):     \"\"\"     Fonction qui convertit le codage d'un entier de la base 10 à la base 2     Argument :     - base10 : entier codé en base 10, int, entre 0 et 255     Retour :     - base2 : entier codé en base 2, lu de gauche à droite     \"\"\"     base2 = [] # initialisation d'une liste vide     for exposant in range(7, -1, -1): # boucle faisant varier exposant de 7 à 0 par pas de -1         if 2 ** exposant <= base10:             base2.append(1)             b",
+    "metadata": {
+      "fichier": "StA╠â┬®ganographie_Exercice_1.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_65": {
+    "texte": "ase10 = base10 - 2 ** exposant         else:             base2.append(0)     return np.flip(base2) # retournement des valeurs dans la liste  def to_decimal(base2):     base10 = 0     # calcul de la somme des puissances de 2 pondérée selon les valeurs dans base2     for i in range(8):         base10 = base10 + base2[i] * 2 ** i     return base10  print(to_decimal(to_binary(131)))",
+    "metadata": {
+      "fichier": "StA╠â┬®ganographie_Exercice_1.ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_66": {
+    "texte": "Adrien Guille - R2.03 - Université Lumière Lyon 2Bases de la programmation (2)Sujet 2 – StéganographieExercice 1 – Conversion de base (approche itérative) Usuellement, un nombre s‘écrit de la droite vers la gauche. Les chiffres qui le composent sont indicés à partir de la position 0. Durant les prochaines séances de TP nous auront besoin de basculer entre deux systèmes de numération, en base 10 (système décimal) et en base 2 (système binaire). Ci-après, l’écriture et la décomposition de l’entier",
+    "metadata": {
+      "fichier": "Sujet 2.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_67": {
+    "texte": "130 en base 10, et la même chose en base 2 :  •Importer la bibliothèque numpyet la renommer np. Écrire la fonction to_binary qui reçoit un entier (entre 0 et 255) codé en base 10 et retourne son codage en base 2 sur 8 bits. Le codage en base 2 doit être un vecteur de type np.array de taille 8. Attention, ce vecteur doit se lire de gauche à droite, afin de respecter l’ordre naturel en Python.◦◦◦◦Principe : l’algorithme à programmer repose sur une boucle qui calcule les puissances successives de",
+    "metadata": {
+      "fichier": "Sujet 2.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_68": {
+    "texte": "2, à commencer par la plus grande ; à vous de trouver la suite.◦◦◦◦Astuces : la fonction range peut recevoir un pas négatif ; la fonction np.flip permet d’inverser l’ordre des valeurs dans un vecteur.•Écrire la fonction to_decimal qui reçoit un vecteur tel que celui retourné par la fonction précédente et retourne l'entier correspondant codé en base 10.Exercice 2 - Chargement et visualisation d'une image •Importer la fonction open de la bibliothèque PIL.Image.•Charger l'image burger.png avec la f",
+    "metadata": {
+      "fichier": "Sujet 2.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_69": {
+    "texte": "onction open. Cette fonction retourne un tenseur à 3 dimensions, qu’il faut convertir en np.array. Afficher la taille de chaque dimension avec la fonction np.shape.•Importer la fonction imshow de la bibliothèque matplotlib.pyplot et l'utiliser pour visualiser l'image d'après ce tenseur.•Charger et visualiser une des images burger_mystery_x.png.Exercice 3 - Manipulation des images  •Écrire la fonction remove_lsd qui reçoit un tenseur décrivant une image et un entier n (entre 1 et 8) et retourne u",
+    "metadata": {
+      "fichier": "Sujet 2.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_70": {
+    "texte": "n nouveau tenseur, où les couleurs ont été altérées via leur codage en base 2 : les n premiers bits (least significant digits, lsd) sont tous fixés à 0.◦◦◦◦Visualiser les images retournées par la fonction pour différentes valeurs de n.•Écrire la fonction remove_msd qui reçoit un tenseur décrivant une image et un entier n (entre 1 et 8) et retourne un nouveau tenseur, où les couleurs ont été altérées via leur codage en base 2 : les n derniers bits (most significant digits, msd) sont tous fixés à",
+    "metadata": {
+      "fichier": "Sujet 2.pdf",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_71": {
+    "texte": "0.◦◦◦◦Visualiser les images retournées par la fonction pour différentes valeurs de n.•Écrire la fonction decode_image qui reçoit un tenseur et en extrait un nouveau, tel que les 4 bits les plus forts du tenseur de sorties correspondent aux 4 bits les plus faibles du tenseur d’entrée. Les 4 bits les plus faibles du tenseur de sortie sont fixés à 0.Exercice additionel •Réécrire les fonctions to_binary et to_decimal de manière récursive.•Écrire la fonction hide_image qui reçoit 2 tenseurs décrivant",
+    "metadata": {
+      "fichier": "Sujet 2.pdf",
+      "debut": 2500,
+      "fin": 3000
+    }
+  },
+  "chunk_72": {
+    "texte": "2 images de même taille et qui retourne une nouvelle image avec la première cachée dans la seconde.",
+    "metadata": {
+      "fichier": "Sujet 2.pdf",
+      "debut": 3000,
+      "fin": 3500
+    }
+  },
+  "chunk_73": {
+    "texte": "Adrien Guille - R1.03 - Université Lumière Lyon 2Bases de la programmation (1)Bases de la programmation (1)TD 1 - Opérateurs logiques et structures conditionnellesPartie 1 - Opérateurs logiques Q1 - Déterminer ce que vaut la variable d après l’exécution du programme ci-après. Q2 - Déterminer ce que vaut la variable d après l’exécution du programme ci-après. Q3 - Déterminer ce que vaut la variable d après l’exécution du programme ci-après.a = Falseb = Truec = Falsed = not a and b or ca = Falseb =",
+    "metadata": {
+      "fichier": "TD1 - Structures conditionnelles.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_74": {
+    "texte": "Truec = Falsed = not(a and b or c)a = 3b = 21c = Trued = not a <= b and c Partie 2 - Structures conditionnelles Structure conditionnelle simple Structure utile lorsque certaines instructions ne doivent être exécutées que si une condition est respectée.Usage :if une valeur booléenne:séquence d'instructionsQ1 - Écrire un programme qui reçoit une valeur numérique x en entrée puis calcule et affiche la valeur absolue de x. Structure conditionnelle complète Structure utile lorsque certaines instruct",
+    "metadata": {
+      "fichier": "TD1 - Structures conditionnelles.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_75": {
+    "texte": "ions ne doivent être exécutées que si une condition est respectée, et d’autres instructions quand elle ne l’est pas.Usage :if une valeur booléenne:séquence principale d'instructions else:séquence alternative d'instructions Q2 - Écrire la trace d'exécution du programme ci-dessous. Q3 - Écrire la trace d'exécution du programme ci-dessus en considérant cette fois x = 1et y = 8 comme données d'entrée.Q4 - Écrire un programme qui reçoit deux entiers aet b et détermine si a est un multiple de b. Le ca",
+    "metadata": {
+      "fichier": "TD1 - Structures conditionnelles.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_76": {
+    "texte": "s échéant le programme le signalera par un message ; autrement il affichera un message précisant le reste de la division entière de apar b. Q5 - Écrire un programme qui détermine la plus grande valeur parmi trois nombres a, b et c.Q6 - Écrire un programme qui détermine le signe du produit de trois nombre a, bet c sans utiliser l’opérateur de produit. # définition des données d'entrée : x et yx = 3y = 1# traitementz = 4if z - x == 3 :    x = 2    y = x + y - z else:    if x >= 0 and y < 2:",
+    "metadata": {
+      "fichier": "TD1 - Structures conditionnelles.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_77": {
+    "texte": "x = 0        z = 1     else:        x = y         z = y# affichage des données de sortie : x, y et zprint(x, y, z)",
+    "metadata": {
+      "fichier": "TD1 - Structures conditionnelles.pdf",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_78": {
+    "texte": "Adrien Guille - R1.03 - Université Lumière Lyon 2Bases de la programmation (1)TD 2 - Structures itérativesExercice 1 Deviner ce que le programme suivant calcule d'après les résultats obtenus avec les données d'entrée x = 5,y = 2 et x = 2, y = 2. L'opérateur % calcule le reste de la division entière de l'opérande gauche par l'opérande droite. La fonction int extrait la partie entière du nombre donné entre les parenthèses. Exercice 2 Écrire un programme qui calcule le produit de deux entiers natur",
+    "metadata": {
+      "fichier": "TD2 - Structures itA╠â┬®ratives.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_79": {
+    "texte": "els a et b, uniquement en utilisant l'opérateur de somme. Pour rappel, .Exercice 3 Écrire un algorithme qui détermine le plus petit entier n tel que , c'est-à-dire tel que 2 élevé à la puissance  dépasse un certain seuil s.# données d'entréex = 5y = 2# traitementz = 0while x != 0 :    if x % 2 == 1 :        z = z + y    x = int(x / 2)    y = y * 2# donnée de sortieprint(z) Exercice 4 Écrire un algorithme qui détermine si un entier naturel donné, n, est premier ou non. Pour rappel, n est premier",
+    "metadata": {
+      "fichier": "TD2 - Structures itA╠â┬®ratives.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_80": {
+    "texte": "s'il admet exactement deux diviseurs, 1 et lui-même.",
+    "metadata": {
+      "fichier": "TD2 - Structures itA╠â┬®ratives.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_81": {
+    "texte": "Adrien Guille - R2.03 - Université Lumière Lyon 2Bases de la programmation (2)Sujet 1 – Devine la corrélation ! Exercice 1 – Générer les données 1.Se connecter à Google Colab et créer un nouveau notebook.2.Importer les fonctions utiles et consulter leur documentation en ligne :from numpy import arange # génère une séquence de valeurs régulièrement espacéesfrom numpy.random import uniform # réalise un tirage aléatoire selon la loi uniformefrom numpy.random import normal # réalise un tirage aléato",
+    "metadata": {
+      "fichier": "TP1-2.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_82": {
+    "texte": "ire selon une loi normale123 3.Définir la fonction generate_data qui reçoit en argument un nombre de points n et retourne une série bivariée  de taille n générée selon la procédure suivante :•Les valeurs de  sont régulièrement espacées entre 0 et 1.•Les valeurs de  sont définies comme une fonction de , avec  :◦◦◦◦La constante  est choisie uniformément entre 0 et 0,75 ;◦◦◦◦Le terme d'erreur prope au i-ème individu, , est tiré selon la loi normale centrée en 0 et d’écart-type  ;◦◦◦◦La constante  e",
+    "metadata": {
+      "fichier": "TP1-2.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_83": {
+    "texte": "st choisie uniformément entre 0,01 et 0,2.4.Tester la fonction.Exercice 2 – Jouer un tour 1.Importer les fonctions utiles : 2.Définir la fonction play_turn qui :•Appelle la fonction définie précédemment pour générer entre 20 et 30 individus ;•Mesure le coefficient de corrélation linéaire, aussi appelé coefficient de corrélation de Pearson, entre  et  ;•Affiche le nuage de points ;•Lit l'estimation du coefficient, saisi au clavier par le joueur ;•Retourne le coefficient mesuré et celui estimé par",
+    "metadata": {
+      "fichier": "TP1-2.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_84": {
+    "texte": "le joueur.3.Tester la fonction.Exercice 3 – Jouer une partie 1.Définir la fonction play_game qui permet d'enchaîner les tours, en gérant les vies et les pièces et retourne le nombre de pièces accumulées lorsque le joueur perd. Les nombres de vies et de pièces obéissent aux règles suivantes :•Si la différence absolue entre les deux coefficients est inférieure ou égale à 0,05, le joueur gagne une vie (sans pouvoir dépasser 3 vies) et gagne 5 pièces ;•Si la différence absolue est comprise entre 0,",
+    "metadata": {
+      "fichier": "TP1-2.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_85": {
+    "texte": "05 et 0,1, le joueur gagne une pièce ;from scipy.stats import pearsonr # mesure le coefficient de corrélation linéaire et la p-valeurfrom matplotlib.pyplot import scatter # configure un graphique en nuage de pointsfrom matplotlib.pyplot import show # affiche les graphiques123 •Si la différence absolue est supérieure à 0,1, le joueur perd une vie.•Si le joueur enchaîne 5 différences inférieures ou égales à 0,1, il reçoit 5 pièces bonus.2.Tester la fonction.Exercice 4 – Jouer au jeu 1.Écrire le pr",
+    "metadata": {
+      "fichier": "TP1-2.pdf",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_86": {
+    "texte": "ogramme principal qui permet au joueur de joueur autant parties qu’il le souhaite.2.Modifier le programme principal pour suivre le nombre de pièces gagnées et alerter le joueur quand il atteint un nouveau record.Exercice 5 - Analyser le jeu 1.Importer les fonctions utiles :1.Modifier la fonction play_game de sorte à ce qu'elle retourne aussi la liste des coefficients réels et estimés au cours du jeu.2.Modifier le programme principal pour mémoriser tous ces coefficients au fil des parties.3.Visua",
+    "metadata": {
+      "fichier": "TP1-2.pdf",
+      "debut": 2500,
+      "fin": 3000
+    }
+  },
+  "chunk_87": {
+    "texte": "liser les distributions des coefficients réels et estimés à l'aide de deux histogrammes.from matplotlib.pyplot import hist, legend, title1",
+    "metadata": {
+      "fichier": "TP1-2.pdf",
+      "debut": 3000,
+      "fin": 3500
+    }
+  },
+  "chunk_88": {
+    "texte": "Adrien Guille - R1.03 - Université Lumière Lyon 2Bases de la programmation (1)TP 1 - Prise en main de Python & Visual Studio Exercice 1 - Préparation de l’environnement de travail Lancer Visual Studio et ouvrir le menu « Extensions ». Rechercher et installer les extensions suivantes :•Python•JupyterExercice 2 - Programmation en mode “notebook” Créer un nouveau notebook Jupyter et l’enregistrer sous le nom TP1.ipynb dans votre répertoire personnel. Taper et exécuter chacune des instructions suiva",
+    "metadata": {
+      "fichier": "TP1.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_89": {
+    "texte": "ntes dans une nouvelle cellule de code :•print(\"Bienvenue\")•prénom = input(\"Comment vous appelez-vous ? \")•print(f\"Bonjour {prénom} !\")•âge = input(\"Quel âge avez-vous ? \")•année = 2023 - int(âge)•print(f\"Vous êtes donc né(e) entre {année - 1} et {année} !\")Exercice 3 - Import d'un notebook existant Se connecter à la page du cours sur Moodle et télécharger le notebook nommé “Intégration par la méthode de Monte Carlo” en faisant un clic-doit pour l'enregistrer. Ouvrir le fichier téléchargé depuis",
+    "metadata": {
+      "fichier": "TP1.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_90": {
+    "texte": "Visual Studio. Exécuter le programme plusieurs fois en changeant à chaque fois le nombre de tirages et constater l'effet du nombre de tirages sur l'estimation.Exercice 4 - Détermination du résultat à un examen Rouvrir le notebook TP1.ipynb. Ajouter une cellule de code et y écrire un programme permettant de déterminer si un étudiant est admis ou recalé à un concours, d’après ses résultats à 3 épreuves. Un étudiant est admis si la moyenne pondérée des 3 notes est supérieure ou égale à 10, sachant",
+    "metadata": {
+      "fichier": "TP1.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_91": {
+    "texte": "que les coefficients sont respectivement 2, 4 et 3. Exercice 5 - Calcul de propriétés d'un cercle Ajouter une cellule de code. Dans un premier temps, écrire un programme qui calcule la circonférence et l'aire d'un cercle, sachant son rayon. Le programme doit s'assurer que le rayon est une valeur positive. Dans un second temps, modifier le programme pour qu'il demande à l'utilisateur de choisir entre l'affichage de la circonférence et de l'aire.Exercice 6 - Estimation de  selon la méthode de Mon",
+    "metadata": {
+      "fichier": "TP1.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_92": {
+    "texte": "te Carlo Ajouter une cellule de code. Écrire un programme qui approche la valeur de  selon la méthode de Monte Carlo. L'algorithme consiste à tirer uniformément un grand nombre de points à l’intérieur d’un carré, et à calculer la proportion de points appartenant au disque inscrit dans ce carré. Cette proportion donne une estimation de . Étant donné un carré de côté 2, centré en , comme dans la figure ci-après, le point  appartient au disque inscrit dans ce carré si .",
+    "metadata": {
+      "fichier": "TP1.pdf",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_93": {
+    "texte": "Adrien Guille - R1.03 - Université Lumière Lyon 2Bases de la programmation (1)TP 2-3 - C'est plus / C'est moins Exercice 1 Télécharger le notebook TP2.ipynb depuis Moodle puis l’ouvrir dans Visual Studio Code. 1.Dans la cellule de code existante, programmer une première version du jeu laissant le joueur saisir des valeurs jusqu’à ce qu’il trouve. À chaque suggestion, le programme indique si la valeur saisie est inférieure, supérieure ou égale à la valeur recherchée.2.Modifier le programme pour q",
+    "metadata": {
+      "fichier": "TP2-3.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_94": {
+    "texte": "u’il alerte l’utilisateur s’il saisit une valeur en dehors de l’intervalle [0; 100].Exercice 2 Créer une section “Exercice 2”. Copier-coller le programme précédent dans une nouvelle cellule de code.1.Modifier le programme de sorte que le joueur puisse choisir un mode de jeu au lancement : facile (jusqu'à 10 suggestions) ou difficile (jusqu'à 5 suggestions).2.Modifier le programme de sorte que le joueur puisse enchaîner autant de parties qu'il le souhaite. Lorsqu'il a fini de joueur, le programme",
+    "metadata": {
+      "fichier": "TP2-3.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_95": {
+    "texte": "doit indiquer le nombre de victoires et le nombre de défaites.Exercice 3 Créer une section `“Exercice 3”. Copier-coller le programme précédent dans une nouvelle cellule.1.Modifier le programme pour qu'à la fin de la partie, il affiche l'évolution de la différence entre les valeurs saisies et la valeur recherchée.2.Modifier le programme de sorte qu'en mode facile, l'ordinateur suggère au joueur une valeur à saisir, selon la méthode de dichotomie.",
+    "metadata": {
+      "fichier": "TP2-3.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_96": {
+    "texte": "# TP 2 & 3 : Jeu du \"C'est plus / C'est moins\"  ## Exercice 1 # Charger la bibliothèque \"random\" (fonctions liées à l'aléatoire) import random  # Tirer aléatoirement un entier dans l'intervalle [1; 100] cible = random.randrange(0, 101) # tirage aléatoire d'un entier dans l'intervalle [0; 100]  # Affecter une valeur fausse à la variable suggestion pour rentrer dans la boucle suggestion = -1 while suggestion != cible:   # Lire une valeur entière saisie au clavier   suggestion = input(\"Saisir un en",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_97": {
+    "texte": "tier : \")   suggestion = int(suggestion)    # Vérifier la validité de la suggestion   if suggestion >= 1 and suggestion <= 100:     # Comparer les deux valeurs     if cible < suggestion:       # Branche principale       print(\"C'est moins !\")     else:       # Branche alternative       if cible > suggestion:         print(\"C'est plus !\")       else:         print(\"Bravo !\")   else:     print(\"Votre suggestion doit être entre 1 et 100\") ## Exercice 2 # Charger la bibliothèque \"random\" (fonctions",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_98": {
+    "texte": "liées à l'aléatoire) import random  # Lire le mode de jeu choisi par le joueur difficulté = input(\"Voulez-vous jouer en mode facile (F) ou difficile (D) ? \") if difficulté == \"F\":   limite = 10 else:   if difficulté == \"D\":     limite = 5   else:     print(f\"{difficulté} : mode de jeu non reconnu ; jeu en mode facile\")     limite = 10  n_victoires = 0 n_défaites = 0 rejouer = \"O\" while rejouer == \"O\":   # Tirer aléatoirement un entier dans l'intervalle [1; 100]   cible = random.uniform(1, 101)",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_99": {
+    "texte": "cible = int(cible)    # Déclarer un compteur   compteur = 0   # Affecter une valeur fausse à la variable suggestion pour rentrer dans la boucle   suggestion = -1   # Déclarer un historique vide   historique = []   while suggestion != cible and compteur < limite:     # Lire une valeur entière saisie au clavier     suggestion = input(\"Saisir un entier : \")     suggestion = int(suggestion)      # Vérifier la validité de la suggestion     if suggestion >= 1 and suggestion <= 100:       # Ajouter la",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_100": {
+    "texte": "différence à la fin de liste       différence = suggestion - cible       historique.append(différence)       # Compter une tentative       compteur = compteur + 1       # Comparer les deux valeurs       if cible < suggestion:         # Branche principale         print(\"C'est moins !\")       else:         # Branche alternative         if cible > suggestion:           print(\"C'est plus !\")         else:           print(\"Bravo !\")     else:       print(\"Votre suggestion doit être entre 1 et 100\")",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_101": {
+    "texte": "# Conclure la partie   if suggestion == cible:     # La boucle s'est arrêtée car on a trouvé     print(f\"Vous avez trouvé en {compteur} tentatives\")     n_victoires = n_victoires + 1   else:     # La boucle s'est arrêtée car on a atteint les 10 tentatives avant de trouver     print(f\"Perdu ! Il fallait trouver {cible}\")     n_défaites = n_défaites + 1   # Afficher l'historique   print(historique)    # Lire le choix du joueur   rejouer = input(\"Voulez-vous rejouer ? (O/N)\")  print(f\"Session de",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 2500,
+      "fin": 3000
+    }
+  },
+  "chunk_102": {
+    "texte": "jeu terminée : vous avez gagné {n_victoires} fois et perdu {n_défaites} fois\") ## Exercice 3 # Charger la bibliothèque \"random\" (fonctions liées à l'aléatoire) import random  # Lire le mode de jeu mode = input(\"Voulez-vous jouer en mode facile (F) ou difficile (D) ? \") # Déterminer le nombre limite de tentatives if mode == \"F\":   limite = 10 else:   if mode == \"D\":     limite = 5   else:     print(\"%s : mode de jeu non reconnu ; jeu en mode facile par défaut\" % mode)     mode = \"F\"     limite =",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 3000,
+      "fin": 3500
+    }
+  },
+  "chunk_103": {
+    "texte": "10  print(\"Vous avez %d tentatives pour trouver !\" % limite) # Déclarer des compteurs pour suivre les scores n_victoires = 0 n_défaites = 0 # Déclarer une variable pour lire le choix de l'utilisateur rejouer = \"O\"  # Boucler pour enchaîner les parties while rejouer == \"O\":   # Tirer aléatoirement un entier dans l'intervalle [1; 100]   cible = random.uniform(1, 100)   cible = int(cible)   # Déclarer un compteur   compteur = 0   # Déclarer une liste vide pour mémoriser les différences   différenc",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 3500,
+      "fin": 4000
+    }
+  },
+  "chunk_104": {
+    "texte": "es = []   # Déclarer trois variables pour la recherche dichotomique   recommandation = 0   largeur_intervalle = 100   signe = 1   # Affecter une valeur fausse à la variable suggestion pour rentrer dans la boucle   suggestion = -1   # Boucler pour enchaîner les suggestions   while suggestion != cible and compteur < limite:     # Lire une valeur entière saisie au clavier     if mode == \"F\":       largeur_intervalle = int(largeur_intervalle / 2)       recommandation = recommandation + signe * large",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 4000,
+      "fin": 4500
+    }
+  },
+  "chunk_105": {
+    "texte": "ur_intervalle       print(f\"L'ordinateur vous recommande de suggérer {recommandation}\")     suggestion = input(\"Saisir un entier : \")     suggestion = int(suggestion)      # Vérifier la validité de la suggestion     if suggestion >= 1 and suggestion <= 100:       # Mémoriser la différences       différence = suggestion - cible       différences.append(différence)       # Compter une tentative       compteur = compteur + 1       # Comparer les deux valeurs       if cible < suggestion:         # B",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 4500,
+      "fin": 5000
+    }
+  },
+  "chunk_106": {
+    "texte": "ranche principale         print(\"C'est moins !\")         signe = -1       else:         # Branche alternative         if cible > suggestion:           print(\"C'est plus !\")           signe = 1         else:           print(\"Bravo !\")     else:       print(\"Votre suggestion doit être entre 1 et 100\")    # Conclure la partie   if suggestion == cible:     # La boucle s'est arrêtée car on a trouvé     print(f\"Vous avez trouvé en {compteur} tentatives\")     n_victoires = n_victoires + 1   else:     #",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 5000,
+      "fin": 5500
+    }
+  },
+  "chunk_107": {
+    "texte": "La boucle s'est arrêtée car on a atteint les 10 tentatives avant de trouver     print(f\"Perdu ! Il fallait trouver {cible}\")     n_défaites = n_défaites + 1   # Affichage de l'évolution de la différence entre les suggestions et la cible   print(\"Évolution de la différence entre les suggestions et la cibles :\", différences)    rejouer = input(\"Voulez-vous rejouer ? O/N : \") print(f\"Session de jeu terminée : vous avez gagné {n_victoires} fois et perdu {n_défaites} fois\")",
+    "metadata": {
+      "fichier": "TP3 - Notebook (solution complA╠â┬¿te).ipynb",
+      "debut": 5500,
+      "fin": 6000
+    }
+  },
+  "chunk_108": {
+    "texte": "Adrien Guille - R1.03 - Université Lumière Lyon 2Bases de la programmation (1)TP 4-5-6 - SpotifyL’objectif est d’écrire un notebook pour analyser les artistes et les chansons les plus populaires sur Spotify de 2010 à 2019.Exercice 1 Enregistrer dans un même répertoire le notebook TP4 - Notebook (base) et le fichier de données spotify.csv disponibles sur Moodle.Exécuter la première cellule de code.Créer ensuite une cellule et écrire un programme qui :•Affiche le nombre de chansons•Affiche le nomb",
+    "metadata": {
+      "fichier": "TP4-5-6.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_109": {
+    "texte": "re et les noms des attributs caractérisant les chansons•Affiche le titre et le nom de l’artiste de la première chanson dans le fichierExercice 2 Créer une section intitulée “Duel d’artistes”.Créer une cellule de code et y écrire un programme qui :•Demande à l’utilisateur de saisir les noms de deux artistes ;•Compte et mémorise le nombre de chansons pour chaque artiste ;•Indique lequel des deux artistes a le plus de chansons dans le top Spotify (prévoir le cas où les deux artistes sont ex-aequo).",
+    "metadata": {
+      "fichier": "TP4-5-6.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_110": {
+    "texte": "Exercice 3 Créer une section intitulée “Analyse d’un artiste”.Créer une cellule de code et y écrire un programme qui :•Demande à l’utilisateur de saisir le nom d’un artiste;•Crée une nouvelle liste nommée chansons_artiste contenant la description de ses chansons (autrement dit, qui crée une sous-liste à partir de la liste globale chansons);•Affiche la taille de cette liste. Créer une cellule de code et y écrire un programme qui :•Identifie la chanson la plus populaire pour l’artiste spécifié pré",
+    "metadata": {
+      "fichier": "TP4-5-6.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_111": {
+    "texte": "cédemment;•Affiche le titre et l’année de la chanson.Créer une cellule de code et y écrire un programme qui :•Demande à l’utilisateur de saisir le nom d’un des attributs numériques (c’est-à-dire “tempo”, “énergie”, etc);•Calcule le minimum, le maximum et la moyenne de cet attribut pour les chansons de cet artiste (c’est-à-dire les chansons dans la liste chansons_artistes).Créer une cellule de code et y écrire un programme qui :•Compte et mémorise dans une liste le nombre de chansons dans le top",
+    "metadata": {
+      "fichier": "TP4-5-6.pdf",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_112": {
+    "texte": "Spotify par année;•Affiche, proprement, le nombre de chanson par années.",
+    "metadata": {
+      "fichier": "TP4-5-6.pdf",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_113": {
+    "texte": "Adrien Guille - R1.03 - Université Lumière Lyon 2Bases de la programmation (1)TP 7 - Jeu du penduL'objectif des deux prochaines séances est de programmer un jeu du pendu. Exercice 1 - Gestion du masque Le masque permet de mémoriser quelles lettres du mot ont été découvertes. Il s'agit d'une liste faisant la même longueur que le mot, comportant des valeurs logiques. Si la i-ème lettre (en comptant à partir de zéro) du mot est découverte, la i-ème valeur de la liste vaut True, sinon, False.•Écrire",
+    "metadata": {
+      "fichier": "TP7-8.pdf",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_114": {
+    "texte": "un programme qui crée le masque de départ pour un mot donné.•Compléter le programme pour qu'il lise une lettre saisie au clavier puis mette le masque à jour en conséquence.•Compléter le programme pour qu'il affiche uniquement les lettres du mot qui ont été découvertes, d'après le masque.◦Exemple : le mot à trouver est \"bonjour\" ; la lettre saisie est \"o\" ; le masque vaut donc [False, True, False, False, True, False, False];  le programme doit afficher _ o _ _ o _ _Exercice 2 - Gestion d'une par",
+    "metadata": {
+      "fichier": "TP7-8.pdf",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_115": {
+    "texte": "tie Compléter le programme pour :•D'abord, permettre au joueur de deviner le mot complet.•Ensuite, limiter le nombre d'erreur à 8.Exercice 3 - Programmation du jeu complet Compléter le programme pour que le joueur enchaîner jouer plusieurs parties. Les mots à deviner doivent être choisis aléatoirement dans une liste pré-remplie. Pour charger la liste de mots dans votre programme :import pickle as pkmots = pk.load(open(\"mots.pickle\", \"rb\"))",
+    "metadata": {
+      "fichier": "TP7-8.pdf",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_116": {
+    "texte": "# Exercice 1  Exécuter les instructions suivantes : print(\"Bienvenue\") prénom = input(\"Comment vous appelez-vous ? \") print(f\"Bonjour {prénom} !\") âge = input(\"Quel âge avous-vous ?\") année = 2023 - int(âge) print(f\"Vous êtes donc né(e) entre {année-1} et {année} !\") # Exercice 2  Voir le notebook CM1.ipynb. # Exercice 3 # Définition des données d'entrée note1 = float(input(\"Note 1 : \")) note2 = float(input(\"Note 2 : \")) note3 = float(input(\"Note 3 : \"))  # Traitement moyenne = (note1 * 2 + note",
+    "metadata": {
+      "fichier": "TP_1_(solution).ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_117": {
+    "texte": "2 * 4 + note3 * 3) / 9 # calcul de la moyenne pondérée if moyenne >= 10:   print(\"Etudiant admis\") # branche principale else:   print(\"Etudiant recalé\") # branche alternative # Exercice 4  Circonférence : $2 \\times rayon \\times pi$  Aire : $\\pi \\times rayon^2$ # Définition de la donnée d'entrée rayon = input(\"Rayon : \") rayon = float(rayon) # conversion du type texte vers le type réel  # Traitement if rayon > 0:   # Calcul de la circonférence et de l'aire   circonférence = 2 * rayon * 3.14   air",
+    "metadata": {
+      "fichier": "TP_1_(solution).ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_118": {
+    "texte": "e = 3.14 * rayon ** 2 # l'opérateur ** permet d'élever à une puissance   # Affichage des données de sortie   choix = input(\"Quelle mesure calculer ? \")   if choix == \"circonférence\":     print(f\"Circonférence : {circonférence}\")   else:     if choix == \"aire\":       print(f\"Aire : {aire}\")     else:       print(\"Seuls les choix 'circonférence' et 'aire' sont valides.\") else:   print(\"Le rayon doit être positif.\") # Exercice 5  Estimation de l'aire d'un cercle par la méthode de Monte-Carlo. impor",
+    "metadata": {
+      "fichier": "TP_1_(solution).ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_119": {
+    "texte": "t random # import de la bibliothèque random qui fournit des fonctions pour le tirage aléatoire  N = 10000000 # donnée d'entrée : nombre de tirage compte = 0 # création d'une variable pour compter le nombre de points appartenant au disque for i in range(N): # répétition N fois     # tirage uniforme des coordonnées     x = random.uniform(-1, 1)     y = random.uniform(-1, 1)     # détermination de l'appartenance au disque     if x ** 2 + y ** 2 <= 1:         compte = compte + 1 # mise à jour du com",
+    "metadata": {
+      "fichier": "TP_1_(solution).ipynb",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_120": {
+    "texte": "pte pi = (4 * compte) / N # calcul de l'approximation de pi print(pi) # affichage de la donnée de sortie",
+    "metadata": {
+      "fichier": "TP_1_(solution).ipynb",
+      "debut": 2000,
+      "fin": 2500
+    }
+  },
+  "chunk_121": {
+    "texte": "# TP 2 & 3 : Jeu du \"C'est plus / C'est moins\" ## Exercice 1  1. Dans la cellule de code existante, programmer une première version du jeu laissant le joueur saisir des valeurs jusqu’à ce qu’il trouve. À chaque suggestion, le programme indique si la valeur saisie est inférieure, supérieure ou égale à la valeur recherchée. 2. Modifier le programme pour qu’il alerte l’utilisateur s’il saisit une valeur en dehors de l’intervalle [0; 100]. import random  cible = random.randrange(0, 101) # tirage alé",
+    "metadata": {
+      "fichier": "TP_2__3_Solution_partielle.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_122": {
+    "texte": "atoire d'un entier dans l'intervalle [0; 100] suggestion = -1 # initialisation de la variable suggestion à une valeur forçant l'entrée dans la boucle (donc une valeur hors de l'intervalle [0;100]) while suggestion != cible: # boucle tant que suggestion différente de la cible     suggestion = int(input(\"Suggestion ? \")) # lecture au clavier d'un entier     while suggestion < 0 or suggestion > 100: # vérification de la saisie         suggestion = int(input(\"%d n'est pas une valeur admissible ; Sug",
+    "metadata": {
+      "fichier": "TP_2__3_Solution_partielle.ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_123": {
+    "texte": "gestion ? \" % suggestion))     # on utilise deux structures conditionnelles imbriquées pour gérer les 3 cas possibles     if suggestion < cible:         print(\"C'est plus !\")     else:         if suggestion > cible:             print(\"C'est moins !\")         else:             print(\"C'est gagné !\") ## Exercice 2  1. Modifier le programme de sorte que le joueur puisse choisir un mode de jeu au lancement : facile (jusqu'à 10 suggestions) ou difficile (jusqu'à 5 suggestions). 2. Modifier le program",
+    "metadata": {
+      "fichier": "TP_2__3_Solution_partielle.ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_124": {
+    "texte": "me de sorte que le joueur puisse enchaîner autant de parties qu'il le souhaite. Lorsqu'il a fini de joueur, le programme doit indiquer le nombre de victoires et le nombre de défaites.  ## Exercice 3  1. Modifier le programme pour qu'à la fin de la partie, il affiche l'évolution de la différence entre les valeurs saisies et la valeur recherchée. 2. Modifier le programme de sorte qu'en mode facile, l'ordinateur suggère au joueur une valeur à saisir, selon la méthode de dichotomie.",
+    "metadata": {
+      "fichier": "TP_2__3_Solution_partielle.ipynb",
+      "debut": 1500,
+      "fin": 2000
+    }
+  },
+  "chunk_125": {
+    "texte": "# TP 2 & 3 : Jeu du \"C'est plus / C'est moins\" ## Exercice 1  1. Dans la cellule de code existante, programmer une première version du jeu laissant le joueur saisir des valeurs jusqu’à ce qu’il trouve. À chaque suggestion, le programme indique si la valeur saisie est inférieure, supérieure ou égale à la valeur recherchée. 2. Modifier le programme pour qu’il alerte l’utilisateur s’il saisit une valeur en dehors de l’intervalle [0; 100]. import random  cible = random.randrange(0, 101) # tirage alé",
+    "metadata": {
+      "fichier": "TP_2__3_Sujet.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_126": {
+    "texte": "atoire d'un entier dans l'intervalle [0; 100]  ## Exercice 2  1. Modifier le programme de sorte que le joueur puisse choisir un mode de jeu au lancement : facile (jusqu'à 10 suggestions) ou difficile (jusqu'à 5 suggestions). 2. Modifier le programme de sorte que le joueur puisse enchaîner autant de parties qu'il le souhaite. Lorsqu'il a fini de joueur, le programme doit indiquer le nombre de victoires et le nombre de défaites.  ## Exercice 3  1. Modifier le programme pour qu'à la fin de la parti",
+    "metadata": {
+      "fichier": "TP_2__3_Sujet.ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_127": {
+    "texte": "e, il affiche l'évolution de la différence entre les valeurs saisies et la valeur recherchée. 2. Modifier le programme de sorte qu'en mode facile, l'ordinateur suggère au joueur une valeur à saisir, selon la méthode de dichotomie.",
+    "metadata": {
+      "fichier": "TP_2__3_Sujet.ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_128": {
+    "texte": "# Étude des chansons populaires sur Spotify ## Chargement des données  Les données sont chargées à partir d'un fichier CSV. La description de chaque chanson est mémorisée à l'aide d'un dictionnaire. Les descriptions de toutes les chansons sont mémorisées dans une liste.  Ainsi, l'intégralité du tableau de données est mémorisé à l'aide d'une seule variable, sous la forme d'une liste de dictionaires. import csv # import de la librairie de base pour lire les fichiers CSV  with open(\"spotify.csv\", m",
+    "metadata": {
+      "fichier": "TP_4_5_6_Base.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_129": {
+    "texte": "ode=\"r\", encoding=\"utf-8-sig\") as fichier:     lecteur = csv.reader(fichier, delimiter=';')     noms_colonnes = next(lecteur)     chansons = [] # déclaration d'une liste vide     for ligne in lecteur:         # création d'un dictionnaire pour mémoriser la description de la chanson         chanson = {\"titre\": ligne[0],                    \"artiste\": ligne[1],                    \"genre\": ligne[2],                    \"année\": int(ligne[3]),                    \"tempo\": int(ligne[4]),",
+    "metadata": {
+      "fichier": "TP_4_5_6_Base.ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_130": {
+    "texte": "\"énergie\": int(ligne[5]),                    \"danse\": int(ligne[6]),                    \"live\": int(ligne[8]),                    \"durée\": int(ligne[10]),                    \"acoustique\": int(ligne[11]),                    \"paroles\": int(ligne[12]),                    \"popularité\": int(ligne[13])                     }         chansons.append(chanson) # ajout de la chanson à la fin de la liste",
+    "metadata": {
+      "fichier": "TP_4_5_6_Base.ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_131": {
+    "texte": "import pickle import random  mots = pickle.load(open(\"mots.pickle\", \"rb\")) # chargement de la liste de mots mot = mots[random.randint(0, len(mots))] # tirage aléatoire d'un mot masque = [] # création d'une liste vide for i in range(len(mot)): # boucle qui se répète autant de fois qu'il y a de lettre dans le mot     masque.append(False) # ajout de la valeur False à la fin de la liste nb_erreurs = 0 while False in masque and nb_erreurs <= 8:     # affichage du mot masqué     mot_masqué = \"\"     fo",
+    "metadata": {
+      "fichier": "TP_7_8_solution.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  },
+  "chunk_132": {
+    "texte": "r i in range(len(mot)):         if masque[i]:             mot_masqué = mot_masqué + \" \" + mot[i]         else:             mot_masqué = mot_masqué + \" _\"     print(mot_masqué)     # lecture d'une lettre et mise à jour du masque     lettre = input(\"Lettre : \")     for i in range(len(mot)):         if mot[i] == lettre:             masque[i] = True             print(\"bravo vous avez trouvé une lettre !\")     if not(lettre in mot): # si la lettre n'est PAS dans le mot         nb_erreurs = nb_erreurs",
+    "metadata": {
+      "fichier": "TP_7_8_solution.ipynb",
+      "debut": 500,
+      "fin": 1000
+    }
+  },
+  "chunk_133": {
+    "texte": "+ 1 if nb_erreurs <= 8:     print(\"Vous avez gagné !\") else:     print(\"Perdu !\")",
+    "metadata": {
+      "fichier": "TP_7_8_solution.ipynb",
+      "debut": 1000,
+      "fin": 1500
+    }
+  },
+  "chunk_134": {
+    "texte": "mot = \"bonjour\" masque = [] for i in range(len(mot)):     masque.append(False) print(masque) l = input(\"une lettre : \") for i in range(len(mot)):     if l == mot[i]:         masque[i] = True print(masque)",
+    "metadata": {
+      "fichier": "TP_7_8_solution_partielle.ipynb",
+      "debut": 0,
+      "fin": 500
+    }
+  }
+}
