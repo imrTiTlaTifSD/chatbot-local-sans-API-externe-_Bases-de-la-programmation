@@ -24,17 +24,17 @@ Il fonctionne entièrement en local, sans appel à des API distantes.
 
 ## Organisation du dépôt
 
-├── README.md
-├── requirements.txt
-├── notebook_chatbot.ipynb # Notebook principal
-├── scripts/ # Scripts Python pour (re)générer les données
-│ ├── 01_pretraitement.py
-│ ├── 02_vectorisation.py
-│ └── 03_indexation.py
-├── data/ # Données utilisées par le chatbot
-│ ├── chunks.json
-│ ├── index_ids.json
-│ └── index_faiss.index
+ README.md
+ requirements.txt
+ notebook_chatbot.ipynb # Notebook principal
+ scripts/ # Scripts Python pour (re)générer les données
+│  01_pretraitement.py
+│  02_vectorisation.py
+│  03_indexation.py
+ data/ # Données utilisées par le chatbot
+│  chunks.json
+│  index_ids.json
+│  index_faiss.index
 
 
 ## Exécution du système
