@@ -1,7 +1,7 @@
 # Chatbot pédagogique pour l'apprentissage de la programmation
 
 Projet réalisé dans le cadre du module Modélisation statistique pour les données complexes et le Big Data.  
-Ce projet vise à développer un **agent conversationnel local, destiné à accompagner les étudiants de BUT SD (Semestres 1 & 2) dans leur apprentissage des bases de la programmation.
+Ce projet vise à développer un agent conversationnel local, destiné à accompagner les étudiants de BUT SD (Semestres 1 & 2) dans leur apprentissage des bases de la programmation.
 
 ---
 
